@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real-Time IoT Energy Monitoring System on AWS | Eghosa Osayame</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css" />
+  <style>
+    .project-detail-hero {
+      margin-top: 80px;
+      padding: 5rem 0 3rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .project-back {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+      transition: var(--transition);
+    }
+    .project-back:hover { color: var(--accent-color); }
+    .project-detail-title {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+    }
+    .project-detail-subtitle {
+      font-family: var(--font-mono);
+      font-size: 0.9rem;
+      color: var(--accent-color);
+      margin-bottom: 1.5rem;
+    }
+    .project-detail-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 2rem;
+    }
+    .project-detail-tags span {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      padding: 0.3rem 0.75rem;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      color: var(--text-secondary);
+    }
+    .project-detail-img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      margin: 3rem 0;
+    }
+    .project-detail-body {
+      max-width: 760px;
+      margin: 0 auto;
+      padding-bottom: 6rem;
+    }
+    .project-detail-body h2 {
+      font-size: 1.6rem;
+      margin: 2.5rem 0 1rem;
+      color: #fff;
+    }
+    .project-detail-body p {
+      color: var(--text-secondary);
+      line-height: 1.8;
+      margin-bottom: 1.2rem;
+      font-size: 1.05rem;
+    }
+    .project-detail-body ul {
+      margin: 0 0 1.5rem 1.5rem;
+    }
+    .project-detail-body li {
+      color: var(--text-secondary);
+      line-height: 1.8;
+      margin-bottom: 0.5rem;
+      font-size: 1.05rem;
+    }
+    .project-detail-body strong {
+      color: var(--text-primary);
+    }
+    .project-cta {
+      display: flex;
+      gap: 1rem;
+      margin-top: 3rem;
+      padding-top: 3rem;
+      border-top: 1px solid var(--border-color);
+    }
+  </style>
+</head>
+<body class="dark-theme">
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-outline" id="cursor-outline"></div>
+
+  <nav class="navbar gsap-fade-in">
+    <div class="container nav-content">
+      <a href="/" class="logo">EGHOSA<span class="accent">_</span></a>
+      <ul class="nav-links">
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#skills">Skills</a></li>
+        <li><a href="/#projects">Work</a></li>
+        <li><a href="/#experience">Experience</a></li>
+        <li><a href="/#contact" class="btn btn-outline">Let's Talk</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="project-detail-hero">
+    <div class="container">
+      <a href="/#projects" class="project-back">← Back to Projects</a>
+      <h1 class="project-detail-title gsap-fade-up">Real-Time IoT Energy Monitoring System on AWS</h1>
+      <p class="project-detail-subtitle">Data Engineering · AWS · Real-Time Streaming · Terraform</p>
+      <div class="project-detail-tags">
+        <span>AWS IoT Core</span><span>Kinesis</span><span>Lambda</span><span>Timestream</span><span>Terraform</span><span>Real-time Streaming</span><span>Cost Optimization</span><span>Solution Architecture</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <img class="project-detail-img gsap-fade-up" src="https://www.datascienceportfol.io/static/profile_pics/pr16_7D8C1867FDB322DFD515.jpg" alt="Real-Time IoT Energy Monitoring System on AWS" />
+
+    <div class="project-detail-body gsap-fade-up">
+      
+<h2>Project Overview</h2>
+<p>A 24-hour AWS challenge to design and implement a production-grade, real-time IoT energy monitoring system. The project covers the full architecture from device data ingestion to time-series storage and analysis.</p>
+
+<h2>Architecture</h2>
+<ul>
+  <li><strong>AWS IoT Core:</strong> Receives and authenticates MQTT messages from IoT energy sensors</li>
+  <li><strong>Amazon Kinesis Data Streams:</strong> Buffers and streams the incoming IoT data at scale</li>
+  <li><strong>AWS Lambda:</strong> Serverless functions process and transform each event in real time</li>
+  <li><strong>Amazon Timestream:</strong> Purpose-built time-series database stores processed energy metrics with efficient querying</li>
+  <li><strong>Terraform:</strong> All infrastructure provisioned as code for reproducibility and version control</li>
+</ul>
+
+<h2>Technical Decisions & Trade-offs</h2>
+<p>Timestream was chosen over DynamoDB or RDS for its native time-series optimizations (automatic data tiering, built-in interpolation). Kinesis was preferred over SQS for ordered, replayable streaming. Lambda kept costs low by removing the need for always-on compute.</p>
+
+<h2>Cost Optimization</h2>
+<p>The architecture was designed with cost in mind — serverless components scale to zero when idle, Timestream's magnetic store tier reduces long-term storage cost, and Kinesis shard allocation was right-sized for the expected throughput.</p>
+
+<h2>Outcome</h2>
+<p>A fully documented, IaC-driven real-time monitoring pipeline deployable in under 15 minutes, with sub-second latency from sensor event to stored time-series record.</p>
+
+            <div class="project-cta">
+        <a href="https://github.com/Austinteghs/Junior-DE-Project" target="_blank" class="btn btn-primary">View on GitHub →</a>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7310626569713061891/" target="_blank" class="btn btn-outline">LinkedIn Post →</a>
+        <a href="/#projects" class="btn btn-ghost">← All Projects</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="footer-copy">© 2025 Eghosa Osayame. Built with intent.</p>
+      <div class="footer-links">
+        <a href="https://github.com/Austinteghs" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/eghosa-osayame-b8b769140/" target="_blank">LinkedIn</a>
+        <a href="mailto:austinteghs@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

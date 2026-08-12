@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eghosa Osayame | Data Engineer & Analytics Engineer</title>
+  <meta name="description" content="Data Engineer and Analytics Engineer based in Abuja, Nigeria. I build scalable pipelines, data models, and analytical platforms." />
+
+  <!-- Preconnect and Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body class="dark-theme">
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-outline" id="cursor-outline"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar gsap-fade-in">
+    <div class="container nav-content">
+      <a href="#" class="logo">EGHOSA<span class="accent">_</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact" class="btn btn-outline">Let's Talk</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="home">
+    <!-- Background portrait -->
+    <div class="hero-portrait-bg"></div>
+    <!-- Gradient overlays -->
+    <div class="hero-fade-left"></div>
+    <div class="hero-fade-bottom"></div>
+
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <p class="mono-subtitle gsap-fade-up">> Hello, World.</p>
+        <h1 class="hero-title gsap-fade-up delay-1">
+          I'm Eghosa Osayame.
+        </h1>
+        <h2 class="hero-subtitle gsap-fade-up delay-2">
+          <span class="term-prompt">> </span>
+          <span id="typed-text"></span><span class="cursor-blink">_</span>
+        </h2>
+        <p class="hero-desc gsap-fade-up delay-3">
+          4+ years building scalable ELT pipelines, dimensional data models, and BI solutions on Snowflake, Azure, AWS, and GCP — turning raw, multi-source data into stakeholder-ready assets.
+        </p>
+        <div class="hero-cta gsap-fade-up delay-4">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="https://drive.google.com/file/d/13Yqdzw1tNo6BGgyHdzz_XpKQQ9uN45eA/view?usp=sharing" target="_blank" class="btn btn-outline">Resume</a>
+          <a href="https://www.linkedin.com/in/eghosa-osayame-b8b769140/" target="_blank" class="btn btn-ghost">LinkedIn</a>
+          <a href="https://github.com/Austinteghs" target="_blank" class="btn btn-ghost">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-bg-glow"></div>
+  </header>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header gsap-scroll-trigger">
+        <span class="mono-label">01. Background</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-layout gsap-scroll-trigger">
+        <div class="about-text">
+          <p class="large-text">
+            Analytics Engineer and Data Engineer with 4+ years of experience building scalable data pipelines, dimensional data models, and BI solutions across cloud-native platforms.
+          </p>
+          <p class="large-text">
+            Currently at Data2Bots, I design layered ELT architectures — staging, intermediate, and mart layers — on Azure, AWS, and GCP, aligned with dbt best practices and powering downstream dashboards and executive reporting.
+          </p>
+          <p class="large-text">
+            I have a strong bias toward data quality, documentation, and models that people actually trust. I bridge raw systems and business decision-making — and I care deeply about the last mile between a pipeline and an insight.
+          </p>
+        </div>
+        <div class="about-photo-wrap">
+          <img src="/images/profile.jpg" alt="Eghosa Osayame" class="about-photo" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header gsap-scroll-trigger">
+        <span class="mono-label">02. Tech Stack</span>
+        <h2 class="section-title">Skills & Tools</h2>
+      </div>
+      <div class="skills-grid gsap-scroll-trigger">
+
+        <div class="skill-category">
+          <h4 class="skill-cat-title">Data Modelling & Transformation</h4>
+          <div class="skill-tags">
+            <span>Dimensional Modelling</span>
+            <span>Star / Snowflake Schemas</span>
+            <span>dbt-style Layered Transforms</span>
+            <span>Staging → Intermediate → Mart</span>
+            <span>SQL Views & Aggregations</span>
+            <span>Data Normalisation</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h4 class="skill-cat-title">Cloud & Warehouses</h4>
+          <div class="skill-tags">
+            <span>Snowflake</span>
+            <span>Azure (ADF, Synapse, Data Factory)</span>
+            <span>AWS (S3, Glue, Redshift, Kinesis, Lambda)</span>
+            <span>Google Cloud</span>
+            <span>Microsoft Fabric</span>
+            <span>OneLake</span>
+            <span>PostgreSQL</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h4 class="skill-cat-title">ETL / ELT Pipelines</h4>
+          <div class="skill-tags">
+            <span>End-to-End Pipeline Design</span>
+            <span>Structured Data Ingestion</span>
+            <span>Semi-structured & Unstructured</span>
+            <span>Python (pandas, NumPy)</span>
+            <span>SQL-based ELT</span>
+            <span>Pipeline Orchestration</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h4 class="skill-cat-title">BI & Visualisation</h4>
+          <div class="skill-tags">
+            <span>Power BI</span>
+            <span>DAX</span>
+            <span>Power Query</span>
+            <span>Tableau</span>
+            <span>Looker Studio</span>
+            <span>Self-service Analytics</span>
+            <span>Dashboard Design</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h4 class="skill-cat-title">Programming & Query</h4>
+          <div class="skill-tags">
+            <span>Advanced SQL</span>
+            <span>CTEs & Window Functions</span>
+            <span>Query Optimisation</span>
+            <span>Python</span>
+            <span>R</span>
+            <span>Terraform</span>
+            <span>Git / GitHub</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h4 class="skill-cat-title">Data Quality & Governance</h4>
+          <div class="skill-tags">
+            <span>Validation Frameworks</span>
+            <span>QA Checks & Audits</span>
+            <span>Multi-source Consistency</span>
+            <span>Confluence</span>
+            <span>Miro</span>
+            <span>Lucidchart</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header gsap-scroll-trigger">
+        <span class="mono-label">03. Selected Work</span>
+        <h2 class="section-title">All Projects</h2>
+      </div>
+      <div class="project-grid">
+
+        <div class="project-card gsap-scroll-trigger">
+          <div class="project-img-wrapper">
+            <div class="project-img" style="background-image: url('https://www.datascienceportfol.io/static/profile_pics/pr14_8BD8BAA9BC5C775A9E5F.png');"></div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">End-to-End Data Pipeline with Microsoft Fabric</h3>
+            <p class="project-desc">Full pipeline: real-time ingestion, OneLake storage, Synapse transformations, Power BI reporting, and automated Teams alerts via Data Activator.</p>
+            <div class="project-tags"><span>Data Engineering</span><span>PySpark</span><span>Microsoft Fabric</span><span>Power BI</span></div>
+            <a href="/projects/14.html" class="project-link">View Case Study <span>→</span></a>
+            <a href="https://www.youtube.com/watch?v=XnWGk-JLYww&list=PL9lLozRY3qaDR2cCKjK6eRRWq5iBpXwT4" target="_blank" class="project-link project-link-secondary">Watch on YouTube <span>↗</span></a>
+          </div>
+        </div>
+
+        <div class="project-card gsap-scroll-trigger">
+          <div class="project-img-wrapper">
+            <div class="project-img" style="background-image: url('https://www.datascienceportfol.io/static/profile_pics/pr16_7D8C1867FDB322DFD515.jpg');"></div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">Real-Time IoT Energy Monitoring System on AWS</h3>
+            <p class="project-desc">24-hour AWS challenge: real-time streaming with IoT Core, Kinesis, Lambda, and Timestream. Terraform IaC and cost-optimized architecture.</p>
+            <div class="project-tags"><span>AWS</span><span>Kinesis</span><span>IoT Core</span><span>Terraform</span></div>
+            <a href="/projects/16.html" class="project-link">View Case Study <span>→</span></a>
+          </div>
+        </div>
+
+        <div class="project-card gsap-scroll-trigger">
+          <div class="project-img-wrapper">
+            <div class="project-img" style="background-image: url('https://www.datascienceportfol.io/static/profile_pics/pr12_20A186FEE5C14240E962.png');"></div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">Adidas ETL — Excel to PostgreSQL</h3>
+            <p class="project-desc">Config-driven Python ETL: extract from Excel, transform (dates, rounding), log the pipeline, load into PostgreSQL.</p>
+            <div class="project-tags"><span>Python</span><span>PostgreSQL</span><span>ETL</span><span>Logging</span></div>
+            <a href="/projects/12.html" class="project-link">View Case Study <span>→</span></a>
+          </div>
+        </div>
+
+        <div class="project-card gsap-scroll-trigger">
+          <div class="project-img-wrapper">
+            <div class="project-img" style="background-image: url('https://www.datascienceportfol.io/static/profile_pics/pr0_7BDD2398E4DEF0981381.png');"></div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">Wealth Data ETL Pipeline (Python + SQLite)</h3>
+            <p class="project-desc">End-to-end ETL extracting, transforming, and loading wealth data into SQLite with ipython-sql for in-notebook querying.</p>
+            <div class="project-tags"><span>Python</span><span>SQLite</span><span>ETL</span><span>Jupyter</span></div>
+            <a href="/projects/0.html" class="project-link">View Case Study <span>→</span></a>
+          </div>
+        </div>
+
+        <div class="project-card gsap-scroll-trigger">
+          <div class="project-img-wrapper">
+            <div class="project-img" style="background-image: url('https://www.datascienceportfol.io/static/profile_pics/pr7_4BABA118B47D52E051EE.png');"></div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">Northwind Traders Power BI Project</h3>
+            <p class="project-desc">Full BI build on the classic Northwind dataset — relational data model, time intelligence DAX, and a Figma-prototyped executive dashboard.</p>
+            <div class="project-tags"><span>Power BI</span><span>DAX</span><span>Data Modeling</span><span>Figma</span></div>
+            <a href="/projects/7.html" class="project-link">View Case Study <span>→</span></a>
+          </div>
+        </div>
+
+        <div class="project-card gsap-scroll-trigger">
+          <div class="project-img-wrapper">
+            <div class="project-img" style="background-image: url('https://www.datascienceportfol.io/static/profile_pics/pr9_4695D38E9422D298F85C.png');"></div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">Teghs Company Sales Dashboard (Power BI)</h3>
+            <p class="project-desc">Star schema data model, DAX measures (YTD, MoM growth, running totals), and executive-ready Power BI dashboard.</p>
+            <div class="project-tags"><span>Power BI</span><span>DAX</span><span>Star Schema</span></div>
+            <a href="/projects/9.html" class="project-link">View Case Study <span>→</span></a>
+          </div>
+        </div>
+
+        <div class="project-card gsap-scroll-trigger">
+          <div class="project-img-wrapper">
+            <div class="project-img" style="background-image: url('https://www.datascienceportfol.io/static/profile_pics/pr3_CE300408F942A0424221.png');"></div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">SQL Queries for Data Analysis</h3>
+            <p class="project-desc">GitHub repo of SQL across PostgreSQL and MSSQL — cleaning, aggregations, CTEs, window functions, and data quality checks.</p>
+            <div class="project-tags"><span>SQL</span><span>PostgreSQL</span><span>Window Functions</span><span>CTEs</span></div>
+            <a href="/projects/3.html" class="project-link">View Case Study <span>→</span></a>
+          </div>
+        </div>
+
+        <div class="project-card gsap-scroll-trigger">
+          <div class="project-img-wrapper">
+            <div class="project-img" style="background-image: url('https://www.datascienceportfol.io/static/profile_pics/pr8_93688E3C14B771D72869.png');"></div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">Chocolate Sales Power BI Dashboard</h3>
+            <p class="project-desc">Power BI dashboard tracking chocolate sales by product, region, and salesperson with period-over-period DAX comparisons.</p>
+            <div class="project-tags"><span>Power BI</span><span>DAX</span><span>Power Query</span></div>
+            <a href="/projects/8.html" class="project-link">View Case Study <span>→</span></a>
+          </div>
+        </div>
+
+        <div class="project-card gsap-scroll-trigger">
+          <div class="project-img-wrapper">
+            <div class="project-img" style="background-image: url('https://www.datascienceportfol.io/static/profile_pics/pr5_B86A44424AC21F2C97DD.png');"></div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">U.S. Restaurant Data Analysis</h3>
+            <p class="project-desc">Analyzed raw restaurant data across all 50 U.S. states. SQL + Excel for cleaning, Tableau for an interactive geographic dashboard.</p>
+            <div class="project-tags"><span>SQL</span><span>Excel</span><span>Tableau</span></div>
+            <a href="/projects/5.html" class="project-link">View Case Study <span>→</span></a>
+          </div>
+        </div>
+
+        <div class="project-card gsap-scroll-trigger">
+          <div class="project-img-wrapper">
+            <div class="project-img" style="background-image: url('https://www.datascienceportfol.io/static/profile_pics/pr4_F308223B1C2863A2A68F.png');"></div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">Malaria Data Analysis (2007–2017)</h3>
+            <p class="project-desc">Cleaned and visualized 10 years of African malaria data. Tableau choropleth maps, trend analysis, and a full PDF report.</p>
+            <div class="project-tags"><span>SQL</span><span>Tableau</span><span>Public Health</span></div>
+            <a href="/projects/4.html" class="project-link">View Case Study <span>→</span></a>
+          </div>
+        </div>
+
+        <div class="project-card gsap-scroll-trigger">
+          <div class="project-img-wrapper">
+            <div class="project-img" style="background-image: url('https://www.datascienceportfol.io/static/profile_pics/pr1_C48CD1AF3F2080FF77A5.jpg');"></div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">500+ Data Visualizations — Mustard Insights</h3>
+            <p class="project-desc">500+ visuals across healthcare, football, entertainment, and global issues — with a focus on African data stories.</p>
+            <div class="project-tags"><span>Power BI</span><span>Figma</span><span>Adobe Illustrator</span></div>
+            <a href="/projects/1.html" class="project-link">View Case Study <span>→</span></a>
+          </div>
+        </div>
+
+        <div class="project-card gsap-scroll-trigger">
+          <div class="project-img-wrapper">
+            <div class="project-img" style="background-image: url('https://www.datascienceportfol.io/static/profile_pics/pr2_8A60B3DBB45B1EB9DD4C.png');"></div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">Tableau Dashboards Across Key Sectors</h3>
+            <p class="project-desc">Collection of Tableau dashboards covering hospital performance, malaria incidence, and healthcare resource allocation — prototyped in Figma.</p>
+            <div class="project-tags"><span>Tableau</span><span>Figma</span><span>Healthcare</span></div>
+            <a href="/projects/2.html" class="project-link">View Case Study <span>→</span></a>
+          </div>
+        </div>
+
+      </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section-header gsap-scroll-trigger">
+        <span class="mono-label">04. Career</span>
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item gsap-scroll-trigger">
+          <div class="timeline-meta">
+            <span class="timeline-date">Nov 2025 — Present</span>
+            <span class="timeline-current">Current</span>
+          </div>
+          <div class="timeline-body">
+            <h3 class="timeline-role">Analytics / Data Engineer</h3>
+            <p class="timeline-company">Data2Bots — Abuja, Nigeria</p>
+            <p class="timeline-desc">Designing and implementing scalable ELT pipelines on Azure, AWS, and Google Cloud, transforming multi-source structured, semi-structured, and unstructured datasets into analytics-ready layers. Building layered data models (staging → intermediate → mart) aligned with dbt best practices, powering downstream BI dashboards and executive reporting. Leading data quality initiatives including validation frameworks, transformation audits, and standardisation processes across Snowflake-style cloud warehouses.</p>
+            <div class="timeline-tags">
+              <span>Azure</span><span>AWS</span><span>GCP</span><span>Snowflake</span><span>ELT</span><span>Data Modelling</span><span>SQL</span><span>Python</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item gsap-scroll-trigger">
+          <div class="timeline-meta">
+            <span class="timeline-date">Mar 2025 — Oct 2025</span>
+          </div>
+          <div class="timeline-body">
+            <h3 class="timeline-role">Database Engineer & BI Officer</h3>
+            <p class="timeline-company">Havosoft</p>
+            <p class="timeline-desc">Designed and maintained ETL pipelines integrating data from diverse sources, enforcing quality standards for analytics-ready datasets. Built interactive dashboards and performance reports in Power BI and Tableau, delivering real-time insights for executive decision-making. Modelled and analysed large, complex datasets to drive strategic initiatives; partnered with developers, product managers, and executives to align data models with business needs.</p>
+            <div class="timeline-tags">
+              <span>ETL</span><span>Power BI</span><span>Tableau</span><span>Data Modelling</span><span>SQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item gsap-scroll-trigger">
+          <div class="timeline-meta">
+            <span class="timeline-date">Sep 2024 — Feb 2025</span>
+          </div>
+          <div class="timeline-body">
+            <h3 class="timeline-role">Data Analyst Instructor (Remote)</h3>
+            <p class="timeline-company">Poshem Technologies</p>
+            <p class="timeline-desc">Taught beginner-to-intermediate SQL and data modelling to a pan-African audience, covering real-world transformation, BI reporting, and analytics best practices. Developed structured course materials emphasising practical data pipeline design and analytical thinking.</p>
+            <div class="timeline-tags">
+              <span>SQL</span><span>Data Modelling</span><span>BI Reporting</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item gsap-scroll-trigger">
+          <div class="timeline-meta">
+            <span class="timeline-date">Apr 2024 — Feb 2025</span>
+          </div>
+          <div class="timeline-body">
+            <h3 class="timeline-role">Data Science Instructor</h3>
+            <p class="timeline-company">Abuja Data School</p>
+            <p class="timeline-desc">Delivered training on Python, SQL, R, and Power BI with emphasis on data cleaning, transformation, and dashboard development. Guided learners through end-to-end data pipeline projects and introduced cloud environments and scalable analytics tooling.</p>
+            <div class="timeline-tags">
+              <span>Python</span><span>SQL</span><span>R</span><span>Power BI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item gsap-scroll-trigger">
+          <div class="timeline-meta">
+            <span class="timeline-date">Nov 2021 — Apr 2024</span>
+          </div>
+          <div class="timeline-body">
+            <h3 class="timeline-role">Data Analyst (Remote)</h3>
+            <p class="timeline-company">Mustard Insights</p>
+            <p class="timeline-desc">Extracted, cleaned, and modelled large datasets using SQL and Python. Built automated dashboards in Power BI and Tableau to communicate business insights. Conducted market research and predictive modelling to support strategic decisions across economic, corporate, investment, and health sectors.</p>
+            <div class="timeline-tags">
+              <span>SQL</span><span>Python</span><span>Power BI</span><span>Tableau</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item gsap-scroll-trigger">
+          <div class="timeline-meta">
+            <span class="timeline-date">Apr 2021 — Feb 2022</span>
+          </div>
+          <div class="timeline-body">
+            <h3 class="timeline-role">Graduate Intern — NYSC</h3>
+            <p class="timeline-company">National Agency for the Control of AIDS (NACA)</p>
+            <p class="timeline-desc">Supported data collection, cleaning, and visualisation for public health programs. Developed dashboards to track HIV campaign performance and participated in prevention programming and conferences.</p>
+            <div class="timeline-tags">
+              <span>SQL</span><span>Tableau</span><span>Excel</span><span>Public Health</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="section certifications" id="certifications">
+    <div class="container">
+      <div class="section-header gsap-scroll-trigger">
+        <span class="mono-label">05. Credentials</span>
+        <h2 class="section-title">Certifications</h2>
+      </div>
+      <div class="cert-grid gsap-scroll-trigger">
+
+        <a href="https://learn.microsoft.com/en-us/users/eghosaosayame-8043/credentials/certification/azure-administrator?tab=credentials-tab" target="_blank" class="cert-card">
+          <div class="cert-issuer"><svg class="cert-logo" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="10" height="10" fill="#f25022"/><rect x="11" y="0" width="10" height="10" fill="#7fba00"/><rect x="0" y="11" width="10" height="10" fill="#00a4ef"/><rect x="11" y="11" width="10" height="10" fill="#ffb900"/></svg><span>Microsoft</span></div>
+          <h4 class="cert-name">Azure Administrator Associate</h4>
+          <span class="cert-verify">Verify ↗</span>
+        </a>
+
+        <a href="https://learn.microsoft.com/en-us/users/eghosaosayame-8043/credentials/582e06d82aff90f4" target="_blank" class="cert-card">
+          <div class="cert-issuer"><svg class="cert-logo" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="10" height="10" fill="#f25022"/><rect x="11" y="0" width="10" height="10" fill="#7fba00"/><rect x="0" y="11" width="10" height="10" fill="#00a4ef"/><rect x="11" y="11" width="10" height="10" fill="#ffb900"/></svg><span>Microsoft</span></div>
+          <h4 class="cert-name">Fabric Analytics Engineer Associate</h4>
+          <span class="cert-verify">Verify ↗</span>
+        </a>
+
+        <a href="https://learn.microsoft.com/api/credentials/share/en-us/EghosaOsayame-8043/B08064CCB79A0BF7?sharingId=AFF46C00AE227299" target="_blank" class="cert-card">
+          <div class="cert-issuer"><svg class="cert-logo" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="10" height="10" fill="#f25022"/><rect x="11" y="0" width="10" height="10" fill="#7fba00"/><rect x="0" y="11" width="10" height="10" fill="#00a4ef"/><rect x="11" y="11" width="10" height="10" fill="#ffb900"/></svg><span>Microsoft</span></div>
+          <h4 class="cert-name">Azure Data Engineer Associate</h4>
+          <span class="cert-verify">Verify ↗</span>
+        </a>
+
+        <a href="https://learn.microsoft.com/api/credentials/share/en-us/EghosaOsayame-8043/A83BA9EAE666C967?sharingId=AFF46C00AE227299" target="_blank" class="cert-card">
+          <div class="cert-issuer"><svg class="cert-logo" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="10" height="10" fill="#f25022"/><rect x="11" y="0" width="10" height="10" fill="#7fba00"/><rect x="0" y="11" width="10" height="10" fill="#00a4ef"/><rect x="11" y="11" width="10" height="10" fill="#ffb900"/></svg><span>Microsoft</span></div>
+          <h4 class="cert-name">Fabric Data Engineer Associate</h4>
+          <span class="cert-verify">Verify ↗</span>
+        </a>
+
+        <a href="https://www.credly.com/badges/5ff50789-26ef-4ddf-9757-20e32ba8657a/public_url" target="_blank" class="cert-card">
+          <div class="cert-issuer"><svg class="cert-logo" viewBox="0 0 80 48" xmlns="http://www.w3.org/2000/svg"><text x="0" y="32" font-family="Arial Black,Arial" font-weight="900" font-size="28" fill="#FF9900">aws</text><path d="M8 40 Q40 52 72 40" stroke="#FF9900" stroke-width="3.5" fill="none" stroke-linecap="round"/></svg><span>AWS</span></div>
+          <h4 class="cert-name">AWS Certified Cloud Practitioner</h4>
+          <span class="cert-verify">Verify ↗</span>
+        </a>
+
+        <a href="https://www.coursera.org/account/accomplishments/professional-cert/FK4YBZYDG2PL" target="_blank" class="cert-card">
+          <div class="cert-issuer"><svg class="cert-logo" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path fill="#4285F4" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#34A853" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#EA4335" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg><span>Google</span></div>
+          <h4 class="cert-name">Google Data Analytics Certificate</h4>
+          <span class="cert-verify">Verify ↗</span>
+        </a>
+
+        <a href="https://www.credly.com/badges/0319c2a3-0d85-413f-b322-ac9c711a30f4/public_url" target="_blank" class="cert-card">
+          <div class="cert-issuer"><svg class="cert-logo" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="22" fill="none" stroke="#326CE5" stroke-width="3"/><polygon points="24,6 28,16 38,16 30,22 33,33 24,27 15,33 18,22 10,16 20,16" fill="#326CE5"/></svg><span>CNCF</span></div>
+          <h4 class="cert-name">Kubernetes & Cloud Native Associate (KCNA)</h4>
+          <span class="cert-verify">Verify ↗</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section education" id="education">
+    <div class="container">
+      <div class="section-header gsap-scroll-trigger">
+        <span class="mono-label">06. Education</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="edu-card gsap-scroll-trigger">
+        <div class="edu-meta">
+          <span class="edu-date">2016 — 2020</span>
+        </div>
+        <div class="edu-body">
+          <h3 class="edu-degree">BSc Biochemistry</h3>
+          <p class="edu-school">Landmark University, Kwara State</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-box gsap-scroll-trigger">
+        <span class="mono-label">07. Get In Touch</span>
+        <h2 class="contact-title">Let's Build Something.</h2>
+        <p class="contact-desc">
+          Open to data engineering roles, analytics engineering positions, and interesting collaborations. Let's talk.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:austinteghs@gmail.com" class="btn btn-primary">austinteghs@gmail.com</a>
+          <a href="https://www.linkedin.com/in/eghosa-osayame-b8b769140/" target="_blank" class="btn btn-outline">LinkedIn</a>
+          <a href="https://github.com/Austinteghs" target="_blank" class="btn btn-outline">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="footer-copy">© 2025 Eghosa Osayame. Built with intent.</p>
+      <div class="footer-links">
+        <a href="https://github.com/Austinteghs" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/eghosa-osayame-b8b769140/" target="_blank">LinkedIn</a>
+        <a href="mailto:austinteghs@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

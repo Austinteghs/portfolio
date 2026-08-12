@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PostgreSQL Training Series (YouTube) | Eghosa Osayame</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css" />
+  <style>
+    .project-detail-hero {
+      margin-top: 80px;
+      padding: 5rem 0 3rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .project-back {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+      transition: var(--transition);
+    }
+    .project-back:hover { color: var(--accent-color); }
+    .project-detail-title {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+    }
+    .project-detail-subtitle {
+      font-family: var(--font-mono);
+      font-size: 0.9rem;
+      color: var(--accent-color);
+      margin-bottom: 1.5rem;
+    }
+    .project-detail-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 2rem;
+    }
+    .project-detail-tags span {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      padding: 0.3rem 0.75rem;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      color: var(--text-secondary);
+    }
+    .project-detail-img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      margin: 3rem 0;
+    }
+    .project-detail-body {
+      max-width: 760px;
+      margin: 0 auto;
+      padding-bottom: 6rem;
+    }
+    .project-detail-body h2 {
+      font-size: 1.6rem;
+      margin: 2.5rem 0 1rem;
+      color: #fff;
+    }
+    .project-detail-body p {
+      color: var(--text-secondary);
+      line-height: 1.8;
+      margin-bottom: 1.2rem;
+      font-size: 1.05rem;
+    }
+    .project-detail-body ul {
+      margin: 0 0 1.5rem 1.5rem;
+    }
+    .project-detail-body li {
+      color: var(--text-secondary);
+      line-height: 1.8;
+      margin-bottom: 0.5rem;
+      font-size: 1.05rem;
+    }
+    .project-detail-body strong {
+      color: var(--text-primary);
+    }
+    .project-cta {
+      display: flex;
+      gap: 1rem;
+      margin-top: 3rem;
+      padding-top: 3rem;
+      border-top: 1px solid var(--border-color);
+    }
+  </style>
+</head>
+<body class="dark-theme">
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-outline" id="cursor-outline"></div>
+
+  <nav class="navbar gsap-fade-in">
+    <div class="container nav-content">
+      <a href="/" class="logo">EGHOSA<span class="accent">_</span></a>
+      <ul class="nav-links">
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#skills">Skills</a></li>
+        <li><a href="/#projects">Work</a></li>
+        <li><a href="/#experience">Experience</a></li>
+        <li><a href="/#contact" class="btn btn-outline">Let's Talk</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="project-detail-hero">
+    <div class="container">
+      <a href="/#projects" class="project-back">← Back to Projects</a>
+      <h1 class="project-detail-title gsap-fade-up">PostgreSQL Training Series (YouTube)</h1>
+      <p class="project-detail-subtitle">Data Education · SQL · PostgreSQL · Technical Instruction</p>
+      <div class="project-detail-tags">
+        <span>SQL</span><span>PostgreSQL</span><span>pgAdmin</span><span>DDL</span><span>DML</span><span>TCL</span><span>Power BI</span><span>Technical Instruction</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <img class="project-detail-img gsap-fade-up" src="https://www.datascienceportfol.io/static/profile_pics/pr13_15EA92F0AA14E4A1BEA7.png" alt="PostgreSQL Training Series (YouTube)" />
+
+    <div class="project-detail-body gsap-fade-up">
+      
+<h2>Project Overview</h2>
+<p>A 24-hour PostgreSQL training series delivered at POShem Technologies (November – December 2024), covering database fundamentals through to advanced querying and BI integration.</p>
+
+<h2>Curriculum Breakdown</h2>
+<ul>
+  <li><strong>DDL (Data Definition Language):</strong> Creating and managing databases, tables, schemas, indexes, and constraints</li>
+  <li><strong>DML (Data Manipulation Language):</strong> INSERT, UPDATE, DELETE, and complex SELECT queries including JOINs, subqueries, CTEs, and window functions</li>
+  <li><strong>TCL (Transaction Control Language):</strong> COMMIT, ROLLBACK, SAVEPOINT — ensuring data integrity in multi-step operations</li>
+  <li><strong>pgAdmin:</strong> Hands-on use of the pgAdmin GUI for database management and query execution</li>
+  <li><strong>Power BI Integration:</strong> Connecting PostgreSQL as a live data source for dashboard development</li>
+</ul>
+
+<h2>Format</h2>
+<p>Role: Instructor at POShem Technologies | Duration: November – December 2024 | Total Hours: 24 hours of live instruction across multiple sessions, blending theory with hands-on exercises.</p>
+
+<h2>Impact</h2>
+<p>Students progressed from zero SQL knowledge to writing multi-table analytical queries and connecting their databases to Power BI for visualization — in just 24 hours of instruction.</p>
+
+      <div class="project-cta">
+        <a href="https://github.com/Austinteghs" target="_blank" class="btn btn-outline">GitHub →</a>
+        <a href="/#projects" class="btn btn-ghost">← All Projects</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="footer-copy">© 2025 Eghosa Osayame. Built with intent.</p>
+      <div class="footer-links">
+        <a href="https://github.com/Austinteghs" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/eghosa-osayame-b8b769140/" target="_blank">LinkedIn</a>
+        <a href="mailto:austinteghs@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
